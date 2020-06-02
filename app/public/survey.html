@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Survey Questions</h2>
+
+        <hr>
+
+        <h3><b>A little something about you...</b></h3>
+
+        <h4 class="mainInput">Name (Required)<span class="error text-danger"></span></h4>
+        <input type="text" name="" id="name" class="form-control">
+
+        <h4 class="mainInput">Link to Photo Image (Required) <span class="error text-danger"></span> </h4>
+        <input type="text" name="" id="image" class="form-control">
+
+        <hr>
+
+        <h3 class="question"><b>Question 1</b></h3>
+        <h4>You find yourself longing for the outdoors?</h4>
+        <select class="selectpicker" id="q1" title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <h3 class="question"><b>Question 2</b></h3>
+        <h4>You like dogs....</h4>
+        <select class="selectpicker" id="q2" title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <h3 class="question"><b>Question 3</b></h3>
+        <h4>You like cats....</h4>
+        <select class="selectpicker" id="q3" title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <h3 class="question"><b>Question 4</b></h3>
+        <h4>Enjoy like playing video games...</h4>
+        <select class="selectpicker" id="q4" title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <h3 class="question"><b>Question 5</b></h3>
+        <h4>Enjoy binge watching netflix....</h4>
+        <select class="selectpicker" id="q5" title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <h3 class="question"><b>Question 6</b></h3>
+        <h4>Enjoy long walks....(on a beach, through the woods, over mountains)</h4>
+        <select class="selectpicker" id="q6" title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <h3 class="question"><b>Question 7</b></h3>
+        <h4>Have a love for singing along to your favorite songs in the car....</h4>
+        <select class="selectpicker" id="q7" title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <h3 class="question"><b>Question 8</b></h3>
+        <h4>You like going for long drives to nowhere...</h4>
+        <select class="selectpicker" id="q8" title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <h3 class="question"><b>Question 9</b></h3>
+        <h4>Could put a pizza down in one sitting...</h4>
+        <select class="selectpicker" id="q9" title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <h3 class="question"><b>Question 10</b></h3>
+        <h4>Is a coffee and breakfast in bed kind of person....</h4>
+        <select class="selectpicker" id="q10
+        " title="Pick one that applies most">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+    </div>
+</body>
+
+</html>
